@@ -1,0 +1,9 @@
+services:
+  cv-dashboard:
+    build: .
+    container_name: cv-dashboard
+    ports:
+      - "8502:8501"
+    volumes:
+      - ./Info:/app/Info:ro
+    restart: unless-stopped

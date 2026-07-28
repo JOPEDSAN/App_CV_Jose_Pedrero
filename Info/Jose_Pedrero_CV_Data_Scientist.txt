@@ -1,0 +1,147 @@
+# JOSE FRANCISCO PEDRERO SÁNCHEZ
+
+**Data Scientist · ML Engineer · Research Technologist**
+
+📍 Valencia, Spain  
+📧 jpedrerosanchez@gmail.com  
+📞 +34 664 235 553  
+🔗 LinkedIn: https://www.linkedin.com/in/jos%C3%A9-francisco-pedrero-s%C3%A1nchez-454a40a0/  
+🔗 ResearchGate: https://www.researchgate.net/profile/Jose-Francisco-Pedrero-Sanchez  
+🔗 Google Scholar: https://scholar.google.es/citations?user=IsAjXHwAAAAJ  
+
+---
+
+# About Me
+
+PhD in Health and Wellbeing Technologies from the Universitat Politècnica de València (UPV) with applied experience in advanced analytics, signal processing, and statistical validation for the development of technology solutions transferable to clinical and industrial environments.
+
+Since 2016, Researcher at the Instituto de Biomecánica de Valencia (IBV), participating in national and European projects such as H2020, CDTI-CERVERA, IVACE, and AVI, contributing to the development of products and services under an ISO 9001-compliant quality management system.
+
+**Scientific output:**  
+- 213 citations  
+- h-index = 8  
+- i10-index = 8  
+
+---
+
+# Education and Learning
+
+## PhD in Health and Wellbeing Technologies
+**Universitat Politècnica de València** — 2023  
+**Cum Laude**
+
+---
+
+## MSc in Electronic Systems Engineering
+**Universitat Politècnica de València** — 2015
+
+---
+
+## BSc in Industrial Engineering – Industrial Electronics
+**Universitat Politècnica de València** — 2012
+
+---
+
+## Vocational Training (Advanced and Intermediate) – Electronics
+**Col Juan Comenius** — 2005–2009
+
+---
+
+# Technical Skills
+
+- Python and R for advanced analytics, machine learning, and signal processing
+- Statistical modeling and experimental design
+- Time series analysis and signal processing
+- Filtering, segmentation, feature extraction, and data quality assessment
+- Computer vision and image analysis using OpenCV and deep learning pipelines
+- Human pose estimation models (MediaPipe, OpenPose, YOLO)
+- Multimodal ML/DL models for classification, prediction, and anomaly detection
+- Deep Learning frameworks: PyTorch and TensorFlow/Keras
+- End-to-end data lifecycle management:
+  - data acquisition
+  - ingestion
+  - cleaning
+  - feature engineering
+  - validation
+  - traceability
+  - versioning
+- MLOps foundations:
+  - Docker
+  - reproducible pipelines
+  - deployment workflows
+- Collaboration with multidisciplinary teams and R+D+I coordination
+
+---
+
+# Professional Experience
+
+## Instituto de Biomecánica de Valencia (IBV)
+**Research Technologist**  
+2016 – 2026
+
+- Development of functional assessment procedures using portable technologies
+- Digital health and active ageing projects focused on:
+  - mobility
+  - frailty
+  - fall risk assessment
+- Ergonomics and occupational health projects:
+  - biomechanical evaluation laboratories
+  - assistive devices
+  - exoskeleton validation
+- Analytical support for product and service decision-making
+- Publications in indexed journals:
+  - BMJ Open
+  - Frontiers in Aging Neuroscience
+  - Biomedical Signal Processing and Control
+- Technology transfer to industry
+- Patent drafting and support
+- Participation in ethics committees for clinical studies
+- Technical training and technology transfer initiatives
+- Supervision of Bachelor’s and Master’s theses
+- Teaching in the Clinical Biomechanical Assessment Master’s program
+
+---
+
+# Early Career / Internships
+
+## ai2 – Institute of Automation and Industrial Computing
+**Research Assistant**  
+Universitat Politècnica de València — 2009
+
+- Mobile robotics programming
+
+---
+
+## Navtival S.L.U.
+**SAT Services – FERMAX**  
+Valencia, Spain — 2008
+
+---
+
+## Electrónica R. Martí S.L.
+**Electronic Equipment Installation and Servicing Technician**  
+Valencia, Spain — 2007
+
+---
+
+# Languages
+
+- Spanish — Native
+- Valencian — Elementary Level
+- English — Professional use in documentation and communication
+
+---
+
+# Soft Skills
+
+- Creativity
+- Adaptability
+- Effective communication
+- Collaborative spirit
+- Problem solving
+- Analytical skills
+- Perfectionism
+- Assertiveness
+- Learning ability
+- Organizational skills
+- Sociability

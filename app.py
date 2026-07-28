@@ -18,6 +18,7 @@ PHOTO_PATH = INFO_DIR / "Foto JOPEDSAN.jpg"
 PROJECTS_PATH = INFO_DIR / "proyectos_IBV_experiencia_investigadora.md"
 CV_TEXT_PATH = INFO_DIR / "Jose_Pedrero_CV_Data_Scientist.txt"
 CV_PDF_PATH = INFO_DIR / "CV_Jose_Pedrero_Docencia.pdf"
+DEVELOP_CV_PDF_PATH = INFO_DIR / "CV_Jose_Pedrero_Develop.pdf"
 SCHOLAR_PUBLICATIONS_PATH = DATA_DIR / "scholar_publications.csv"
 MANUAL_PUBLICATIONS_PATH = DATA_DIR / "manual_publications.csv"
 SCHOLAR_METRICS_PATH = DATA_DIR / "scholar_metrics.json"
@@ -270,11 +271,14 @@ TEACHING_PROPOSAL = {
             ],
         },
         {
-            "title": "UOC online teaching",
+            "title": "Clinical Biomechanical Assessment Master's teaching",
             "items": [
-                "Progressive assessment activities connected to each other.",
-                "Clear rubrics for reasoning, interpretation and communication.",
-                "Continuous feedback based on learning evidence.",
+                (
+                    'Teaching in the <a href="https://master.ibv.org/" target="_blank">'
+                    "IBV Master's degree in Clinical Biomechanical Assessment</a>."
+                ),
+                "Instrumental techniques for biomechanical analysis.",
+                "Biomechanical signal analysis techniques and statistical techniques in biomechanics.",
             ],
         },
         {
@@ -799,13 +803,23 @@ def render_profile(projects: list[dict[str, str]]) -> None:
         cv_text = read_file(CV_TEXT_PATH)
         word_count = len(re.findall(r"\w+", cv_text))
         st.metric("CV text words", word_count)
+        cv_cols = st.columns(2)
         if CV_PDF_PATH.exists():
-            st.download_button(
-                "Download academic CV PDF",
-                data=CV_PDF_PATH.read_bytes(),
-                file_name=CV_PDF_PATH.name,
-                mime="application/pdf",
-            )
+            with cv_cols[0]:
+                st.download_button(
+                    "Download teaching CV PDF",
+                    data=CV_PDF_PATH.read_bytes(),
+                    file_name=CV_PDF_PATH.name,
+                    mime="application/pdf",
+                )
+        if DEVELOP_CV_PDF_PATH.exists():
+            with cv_cols[1]:
+                st.download_button(
+                    "Download developer CV PDF",
+                    data=DEVELOP_CV_PDF_PATH.read_bytes(),
+                    file_name=DEVELOP_CV_PDF_PATH.name,
+                    mime="application/pdf",
+                )
 
 
 def render_experience() -> None:

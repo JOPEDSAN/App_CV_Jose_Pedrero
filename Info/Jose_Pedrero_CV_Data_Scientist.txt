@@ -98,7 +98,10 @@ Since 2016, Researcher at the Instituto de Biomecánica de Valencia (IBV), parti
 - Participation in ethics committees for clinical studies
 - Technical training and technology transfer initiatives
 - Supervision of Bachelor’s and Master’s theses
-- Teaching in the Clinical Biomechanical Assessment Master’s program
+- Teaching in the Instituto de Biomecánica de Valencia Master's degree in Clinical Biomechanical Assessment:
+  - Instrumental techniques for biomechanical analysis
+  - Biomechanical signal analysis techniques
+  - Statistical techniques in biomechanics
 
 ---
 

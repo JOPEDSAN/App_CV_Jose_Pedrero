@@ -148,19 +148,19 @@ PUBLICATIONS = [
     {
         "journal": "BMJ Open",
         "theme": "Digital health / Clinical assessment",
-        "quartile": "Por completar",
+        "quartile": "To be completed",
         "count": 1,
     },
     {
         "journal": "Frontiers in Aging Neuroscience",
         "theme": "Active ageing / Frailty",
-        "quartile": "Por completar",
+        "quartile": "To be completed",
         "count": 1,
     },
     {
         "journal": "Biomedical Signal Processing and Control",
         "theme": "Signals / Biomechanics",
-        "quartile": "Por completar",
+        "quartile": "To be completed",
         "count": 1,
     },
 ]
@@ -240,79 +240,79 @@ EXTRA_PROJECTS = [
 
 AWARDS = [
     {
-        "title": "Premio de investigación Caballé-Gomar, Edición IV",
-        "issuer": "Facultat de Fisioteràpia, Universitat de València",
-        "date": "jun. 2020",
-        "associated_with": "Instituto de Biomecánica de Valencia (IBV)",
+        "title": "Caballe-Gomar Research Award, 4th Edition",
+        "issuer": "Faculty of Physiotherapy, Universitat de Valencia",
+        "date": "Jun. 2020",
+        "associated_with": "Institute of Biomechanics of Valencia (IBV)",
         "work": "Mobility assessment in people with Alzheimer Disease using smartphone sensors",
         "description": (
-            "Reconocimiento como coautor del trabajo galardonado por la Facultat de Fisioteràpia "
-            "con el premio de investigación Caballé-Gomar en su IV edición."
+            "Recognition as co-author of the awarded work by the Faculty of Physiotherapy "
+            "through the 4th edition of the Caballe-Gomar Research Award."
         ),
     }
 ]
 
 
 TEACHING_PROPOSAL = {
-    "headline": "Biomecánica aplicada, medible y transferible a entornos digitales",
+    "headline": "Applied, measurable biomechanics transferable to digital environments",
     "summary": (
-        "Propuesta docente orientada a que el estudiante razone biomecánicamente ante casos reales: "
-        "movilidad funcional, equilibrio, marcha, riesgo de caída, valoración clínica y tecnologías "
-        "portables aplicadas a la salud."
+        "Teaching proposal designed to help students reason biomechanically through real cases: "
+        "functional mobility, balance, gait, fall risk, clinical assessment and wearable "
+        "health technologies."
     ),
     "pillars": [
         {
-            "title": "Biomecánica aplicada",
+            "title": "Applied biomechanics",
             "items": [
-                "Análisis de movimiento humano y función.",
-                "Marcha, equilibrio, sit-to-stand, movilidad y riesgo de caída.",
-                "Interpretación clínica de variables biomecánicas.",
+                "Analysis of human movement and function.",
+                "Gait, balance, sit-to-stand, mobility and fall risk.",
+                "Clinical interpretation of biomechanical variables.",
             ],
         },
         {
-            "title": "Docencia online UOC",
+            "title": "UOC online teaching",
             "items": [
-                "Actividades evaluables progresivas y conectadas entre sí.",
-                "Rúbricas claras para razonamiento, interpretación y comunicación.",
-                "Feedback continuo basado en evidencias de aprendizaje.",
+                "Progressive assessment activities connected to each other.",
+                "Clear rubrics for reasoning, interpretation and communication.",
+                "Continuous feedback based on learning evidence.",
             ],
         },
         {
-            "title": "Tecnología y transferencia",
+            "title": "Technology and transfer",
             "items": [
-                "Sensores portables, smartphone, vídeo y análisis de señal.",
-                "Casos derivados de investigación aplicada y proyectos IBV.",
-                "Puente entre laboratorio, clínica, industria y aula virtual.",
+                "Wearable sensors, smartphones, video and signal analysis.",
+                "Cases derived from applied research and IBV projects.",
+                "Bridge between laboratory, clinic, industry and the virtual classroom.",
             ],
         },
     ],
     "activities": [
         {
-            "name": "PEC 1 · Lectura biomecánica de un caso funcional",
-            "goal": "Identificar fases, variables y compensaciones en una tarea de movilidad.",
-            "evidence": "Informe breve con hipótesis biomecánica y justificación clínica.",
+            "name": "CAE 1 - Biomechanical reading of a functional case",
+            "goal": "Identify phases, variables and compensations in a mobility task.",
+            "evidence": "Short report with a biomechanical hypothesis and clinical justification.",
         },
         {
-            "name": "PEC 2 · Mini-lab remoto con vídeo o smartphone",
-            "goal": "Extraer variables observables de marcha, equilibrio o sit-to-stand.",
-            "evidence": "Tabla de variables, interpretación y limitaciones metodológicas.",
+            "name": "CAE 2 - Remote mini-lab with video or smartphone",
+            "goal": "Extract observable variables from gait, balance or sit-to-stand tasks.",
+            "evidence": "Variable table, interpretation and methodological limitations.",
         },
         {
-            "name": "PEC 3 · Valoración del riesgo y toma de decisión",
-            "goal": "Relacionar datos biomecánicos con funcionalidad, riesgo y propuesta de intervención.",
-            "evidence": "Caso resuelto con rúbrica de razonamiento y comunicación profesional.",
+            "name": "CAE 3 - Risk assessment and decision-making",
+            "goal": "Relate biomechanical data to functionality, risk and intervention proposals.",
+            "evidence": "Resolved case with a reasoning and professional communication rubric.",
         },
         {
-            "name": "PEC 4 · Transferencia e innovación",
-            "goal": "Diseñar una solución docente, clínica o tecnológica basada en biomecánica aplicada.",
-            "evidence": "Propuesta final defendible con criterios de validez, utilidad y ética.",
+            "name": "CAE 4 - Transfer and innovation",
+            "goal": "Design a teaching, clinical or technological solution based on applied biomechanics.",
+            "evidence": "Defensible final proposal with validity, usefulness and ethics criteria.",
         },
     ],
     "interview_points": [
-        "Experiencia directa en biomecánica aplicada, salud digital y valoración funcional.",
-        "Capacidad para transformar investigación en actividades docentes evaluables.",
-        "Perfil híbrido: docente, investigador aplicado y tecnólogo.",
-        "Ajuste natural con evaluación continua, aprendizaje autónomo y casos reales.",
+        "Direct experience in applied biomechanics, digital health and functional assessment.",
+        "Ability to transform research into assessable teaching activities.",
+        "Hybrid profile: teacher, applied researcher and technologist.",
+        "Natural fit with continuous assessment, autonomous learning and real cases.",
     ],
 }
 
@@ -539,7 +539,7 @@ def enrich_publications(pubs: pd.DataFrame) -> pd.DataFrame:
     defaults = {
         "clean_venue": "",
         "publication_type": "Unclassified",
-        "quartile": "Por revisar",
+        "quartile": "To review",
         "ranking_source": "",
         "ranking_note": "",
         "source_url": "",
@@ -788,9 +788,9 @@ def render_profile(projects: list[dict[str, str]]) -> None:
     left, right = st.columns([1.15, 0.85], gap="large")
     with left:
         st.write(
-            "Perfil híbrido entre investigación aplicada, análisis avanzado de datos e ingeniería "
-            "de soluciones. El relato profesional queda centrado en salud digital, biomecánica, "
-            "IA aplicada, validación experimental y transferencia tecnológica."
+            "Hybrid profile spanning applied research, advanced data analytics and solution "
+            "engineering. The professional narrative is centered on digital health, biomechanics, "
+            "applied AI, experimental validation and technology transfer."
         )
         st.link_button("LinkedIn", PROFILE["linkedin"])
         st.link_button("Google Scholar", PROFILE["scholar"])
@@ -978,11 +978,11 @@ def render_research(projects: list[dict[str, str]]) -> None:
 
 def render_publications() -> None:
     st.markdown('<div class="section-title">Publications by Theme and Quartile</div>', unsafe_allow_html=True)
-    st.caption("Datos importados desde Google Scholar y enriquecidos con una tabla local de venues, tipos de publicación y cuartiles.")
+    st.caption("Data imported from Google Scholar and enriched with a local table of venues, publication types and quartiles.")
     pubs = enrich_publications(scholar_publications())
     pubs["clean_venue"] = pubs["clean_venue"].where(
         pubs["clean_venue"].astype(str).str.len() > 0,
-        pubs.get("journal", pd.Series(dtype=str)).replace("", "Venue por revisar"),
+        pubs.get("journal", pd.Series(dtype=str)).replace("", "Venue to review"),
     )
     if "theme" not in pubs:
         pubs["theme"] = ""
@@ -991,7 +991,7 @@ def render_publications() -> None:
         lambda row: infer_theme(row.get("title", ""), row.get("journal", "")),
         axis=1,
     )
-    pubs["quartile"] = pubs["quartile"].replace("", "Por revisar")
+    pubs["quartile"] = pubs["quartile"].replace("", "To review")
     pubs["count"] = 1
 
     metric_cols = st.columns(4)
@@ -1003,9 +1003,9 @@ def render_publications() -> None:
     st.markdown(
         """
         <p class="quality-note">
-        La tabla distingue revistas indexadas, congresos, tesis e informes. Los congresos y publicaciones
-        institucionales no reciben cuartil JCR/SJR de revista; se muestran como tipo de output para no inflar
-        artificialmente la actividad investigadora.
+        The table separates indexed journals, conferences, theses and reports. Conferences and
+        institutional publications do not receive journal JCR/SJR quartiles; they are shown as
+        output types to avoid artificially inflating research activity.
         </p>
         """,
         unsafe_allow_html=True,

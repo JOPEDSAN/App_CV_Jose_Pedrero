@@ -803,23 +803,13 @@ def render_profile(projects: list[dict[str, str]]) -> None:
         cv_text = read_file(CV_TEXT_PATH)
         word_count = len(re.findall(r"\w+", cv_text))
         st.metric("CV text words", word_count)
-        cv_cols = st.columns(2)
-        if CV_PDF_PATH.exists():
-            with cv_cols[0]:
-                st.download_button(
-                    "Download teaching CV PDF",
-                    data=CV_PDF_PATH.read_bytes(),
-                    file_name=CV_PDF_PATH.name,
-                    mime="application/pdf",
-                )
         if DEVELOP_CV_PDF_PATH.exists():
-            with cv_cols[1]:
-                st.download_button(
-                    "Download developer CV PDF",
-                    data=DEVELOP_CV_PDF_PATH.read_bytes(),
-                    file_name=DEVELOP_CV_PDF_PATH.name,
-                    mime="application/pdf",
-                )
+            st.download_button(
+                "Download developer CV PDF",
+                data=DEVELOP_CV_PDF_PATH.read_bytes(),
+                file_name=DEVELOP_CV_PDF_PATH.name,
+                mime="application/pdf",
+            )
 
 
 def render_experience() -> None:

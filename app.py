@@ -110,39 +110,95 @@ EXPERIENCE = [
 
 
 SKILLS = {
-    "Analytics & ML": [
+    "Data Science & ML": [
         "Python",
         "R",
-        "Machine learning",
-        "Deep learning",
+        "Data analysis",
+        "Machine Learning",
+        "Deep Learning",
         "Statistical modeling",
         "Experimental design",
+        "PyTorch",
+        "TensorFlow/Keras",
     ],
-    "Signals & Vision": [
+    "Signals, Vision & Biomechanics": [
         "Time series",
         "Signal processing",
         "Feature extraction",
-        "Computer vision",
+        "Computer Vision",
         "OpenCV",
         "Human pose estimation",
+        "Wearable sensors",
+        "Functional assessment",
     ],
-    "Engineering": [
+    "LLM & Knowledge Systems": [
+        "LLMs",
+        "VLMs",
+        "NLP",
+        "RAG",
+        "GraphRAG",
+        "LangChain",
+        "LangGraph",
+        "Tool calling",
+        "AI agents",
+    ],
+    "Data Engineering & MLOps": [
         "Docker",
+        "Qdrant",
+        "ChromaDB",
+        "FAISS",
+        "Ollama",
         "Reproducible pipelines",
         "Data lifecycle",
         "Traceability",
-        "MLOps foundations",
-        "Deployment workflows",
+        "Basic MLOps",
     ],
-    "Human": [
-        "Creativity",
-        "Adaptability",
-        "Communication",
+    "Professional Strengths": [
+        "Analytical thinking",
         "Problem solving",
+        "Effective communication",
+        "Adaptability",
+        "Teamwork",
         "Organization",
-        "Collaboration",
+        "Multidisciplinary collaboration",
     ],
 }
+
+
+SELECTED_WORKS = [
+    {
+        "title": "AI document intelligence systems",
+        "summary": (
+            "LLM, VLM, NLP, RAG and GraphRAG workflows for technical and clinical document "
+            "analysis, semantic search, information extraction, summarization and knowledge discovery."
+        ),
+        "tags": ["LLMs", "RAG", "GraphRAG", "Vector databases", "Tool calling"],
+    },
+    {
+        "title": "Knowledge automation with AI agents",
+        "summary": (
+            "Automated knowledge-management workflows combining LLM orchestration, tool calling, "
+            "vector stores and structured retrieval over specialized documentation."
+        ),
+        "tags": ["LangChain", "LangGraph", "Qdrant", "ChromaDB", "Ollama"],
+    },
+    {
+        "title": "Functional mobility assessment pipelines",
+        "summary": (
+            "Analytics pipelines using wearable and smartphone sensors to assess gait, balance, "
+            "sit-to-stand performance, fall risk and neurodegenerative disease impact."
+        ),
+        "tags": ["Python", "Time series", "Signal processing", "Clinical validation"],
+    },
+    {
+        "title": "Computer vision for biomechanics and ergonomics",
+        "summary": (
+            "Computer-vision workflows for human movement analysis, ergonomic assessment and "
+            "biomechanical validation of assistive devices and exoskeletons."
+        ),
+        "tags": ["OpenCV", "Computer Vision", "Human pose", "Ergonomics"],
+    },
+]
 
 
 PUBLICATIONS = [
@@ -850,14 +906,29 @@ def render_education() -> None:
 
 def render_skills() -> None:
     st.markdown('<div class="section-title">Capabilities Map</div>', unsafe_allow_html=True)
-    cols = st.columns(4)
+    cols = st.columns(3)
     for index, (group, skills) in enumerate(SKILLS.items()):
-        with cols[index % 4]:
+        with cols[index % 3]:
             st.markdown(
                 f"""
                 <div class="skill-box">
                   <div class="timeline-title">{group}</div>
                   {"".join(f'<span class="tag">{skill}</span>' for skill in skills)}
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+    st.markdown('<div class="section-title">Selected Applied Work</div>', unsafe_allow_html=True)
+    work_cols = st.columns(2)
+    for index, work in enumerate(SELECTED_WORKS):
+        with work_cols[index % 2]:
+            st.markdown(
+                f"""
+                <div class="project-card">
+                  <div class="timeline-title">{work["title"]}</div>
+                  <p>{work["summary"]}</p>
+                  {"".join(f'<span class="tag">{tag}</span>' for tag in work["tags"])}
                 </div>
                 """,
                 unsafe_allow_html=True,
